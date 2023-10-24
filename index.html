@@ -1,129 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<title>Agustín Guerrero | Portafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@800&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark p-3 position-fixed" id="navBar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navImg">
+                <img src="img/great-wave.svg" alt="">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acercami">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item mode">
+                        <div class="changeMode btn ms-2" id="btnMode">
+                            <img src="img/sun.svg" alt="mode" id="modeImg" class="icon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<!--Encabezado-->
-	<header>
-		<h1 id="titulo">Agustín Guerrero</h1>
-		<h2 id="subtitulo">Desarrollador Web</h2>
-		<h1>______________</h1>
-		<h2>____________</h2>
+    <header class="section">
+        <div id="sectionText">
+            <h2>Hola, soy</h2>
+            <h1>Agustín Guerrero</h1>
+            <h2>Desarrollador Front-end Junior</h2>
+            <p class="mt-5">
+                <a href="https://github.com/agusgc" target="_blank" class="btnLink me-3"><img src="img/github.svg"
+                        alt="github" class="icon"> GitHub</a>
+                <a href="https://codepen.io/agusgc" target="_blank" class="btnLink"><img src="img/codepen.svg"
+                        alt="codepen" class="icon"> CodePen</a>
+            </p>
+            <p>Párrafo</p>
+        </div>
+        <div class="sectionImg">
+            <img src="img/hand.png" id="headerImg">
+        </div>
+    </header>
 
-	<!--Menú-->
-		<nav>
-		<table cellspacing="10px">
-			<tr>
-				<th class="menu"><a href="#conocimientos">Conocimientos</a></th>
-				<th class="menu"><a href="#educacion">Educación</a></th>
-				<th class="menu"><a href="#proyectos">Proyectos</a></th>
-				<th class="menu"><a href="#contacto">Contacto</a></th>
-			</tr>
-		</table>
-		</nav>
-			<br>
-			<p>____</p>
-			<p>__</p>
-			<p>.</p>
-	</header>
+    <main>
+        <section id="habilidades" class="section">
+            <div class="sectionText">
+                <h1>Habilidades</h1>
+            </div>
+            <div class="sectionImg">
 
-	<main>
-		<article>
+            </div>
+        </section>
+        <section id="proyectos" class="section">
+            <div class="sectionText">
+                <h1>Proyectos</h1>
+            </div>
+            <div class="sectionImg">
 
-		<!--Conocimientos-->
-			<section id="conocimientos" >
+            </div>
+        </section>
+        <section id="acercami" class="section">
+            <div class="sectionText">
+                <h1>Acerca de mí</h1>
+            </div>
+            <div class="sectionImg">
 
-			<table class="contenido"><tr>
-				<td>
-					<h2>Conocimientos</h2>
+            </div>
+        </section>
+        <section id="contacto" class="section">
+            <div class="sectionText">
+                <h1>Contacto</h1>
+            </div>
+            <div class="sectionImg">
 
-				<ul>
-					<li><img src="img/html.png" class="logos">
-					 HTML - Básico</li>
-					<li><img src="img/css.png" class="logos">
-					CSS - Básico</li>
-					<li><img src="img/js.png" class="logos">
-					JavaScript - Básico</li>
-					<li><img src="img/php.png" class="logos">
-					PHP - Básico</li>
-					<li><img src="img/sql.png" class="logos">
-					SQL - Básico</li>
-				</ul>
-			</td>
-				<td><img src="img/conocimiento.png" class="imgFondo"></td></tr>
-			
-			</table>
-			</section>
+            </div>
+        </section>
+    </main>
 
-		<!--Educación-->
-			<section id="educacion">
 
-			<table class="contenido"><tr>
-				<td><img src="img/estudio.png" class="imgFondo">
-				</td>
-
-				<td>
-					<h2>Educación</h2>
-
-					<ul>
-						<li>Bachillerato de Informática - UTU Colonia
-						<img src="img/utu.png" class="logos"></li>
-						<li>Desarrollo Web - Jóvenes a programar 2023
-						<img src="img/jap.png" class="logos"></li>
-					</ul>
-
-				</td></tr>
-			
-			</table>
-			</section>
-
-		<!--Proyectos-->
-			<section id="proyectos">
-			<table class="contenido"><tr>
-				<td>
-					<h2>Proyectos</h2>
-
-					<ul>
-						<li><a href="proceso.html">Proyecto fin de curso UTU Colonia 2022</a></li>
-					</ul>
-
-			</td>
-				<td><img src="img/proyecto.png" class="imgFondo"></td></tr>
-			
-			</table>
-			</section>
-
-		<!--Contacto-->
-			<section id="contacto">
-			<table class="contenido"><tr>
-				<td><img src="img/contacto.png" class="imgFondo">
-				</td>
-				<td>
-					<h2>Contacto</h2>
-					<ul>
-						<li><a href="proceso.html">Linkedin</a>
-						<img src="img/linkedin.png" class="logos"></li>
-						<li><a href="https://github.com/AgusGC">GitHub</a>
-						<img src="img/github.png" class="logos"></li>
-						<li><a href="proceso.html">Instagram</a>
-						<img src="img/instagram.png" class="logos"></li>
-						<li>agusguerrero345@gmail.com</li>
-					</ul>
-
-				</td></tr>
-			
-			</table>
-			</section>
-		</article>
-	</main>
-
-	<footer>
-		<p id="pie">Portafolio de Agustín Guerrero</p>
-	</footer>
-
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
