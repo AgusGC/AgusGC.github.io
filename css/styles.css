@@ -129,7 +129,7 @@ section {
     position: relative;
     margin-left: 3rem;
   }
-  header {
+  .section {
     grid-template-columns: 1fr;
   }
   .sectionImg {
