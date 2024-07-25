@@ -1,113 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <title>Mi Portfolio</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark p-3 position-fixed" id="navBar">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navImg">
-                <img src="img/great-wave.svg" alt="">
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#acercami">Acerca de mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item mode">
-                        <div class="changeMode btn ms-2" id="btnMode">
-                            <img src="img/sun.svg" alt="mode" id="modeImg" class="icon">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="section">
-        <div id="sectionText">
-            <h2>Hola, soy</h2>
-            <h1>Agustín Guerrero</h1>
-            <h2>Desarrollador Front-end Junior</h2>
-            <p class="mt-5">
-                <a href="https://github.com/agusgc" target="_blank" class="btnLink me-3"><img src="img/github.svg"
-                        alt="github" class="icon"> GitHub</a>
-                <a href="https://codepen.io/agusgc" target="_blank" class="btnLink"><img src="img/codepen.svg"
-                        alt="codepen" class="icon"> CodePen</a>
-            </p>
-            <p>Párrafo</p>
-        </div>
-        <div class="sectionImg">
-            <img src="img/hand.png" id="headerImg">
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <img src="img/sol.svg" class="favicon">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <section id="habilidades" class="section">
-            <div class="sectionText">
-                <h1>Habilidades</h1>
+        <section class="inicio" id="inicio">
+            <div class="texto-inicio">
+                <h2>Hola, soy</h2>
+                <h1>Agustín Guerrero</h1>
+                <h2>Desarrollador web</h2>
             </div>
-            <div class="sectionImg">
-
+            <img src="img/mano.svg" class="mano">
+        </section>
+        <section class="contacto" id="contacto">
+            <h3>Contacto</h3>
+            <div class="contenido">
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/agus-guerrero" target="_blank"><img src="img/contacto/linkedin.svg" alt="Linkedin" title="Linkedin" class="icono"></a>
+                    <p>linkedin.com/in/agus-guerrero</p>
+                </div>
+                <div class="redes">
+                    <a href="mailto:agusguerrero345@gmail.com" target="_blank"><img src="img/contacto/mail.svg" alt="Mail" title="Mail" class="icono"></a>
+                    <p>agusguerrero345@gmail.com</p>
+                </div>
+                <div class="redes">
+                    <a href="https://github.com/agusgc" target="_blank"><img src="img/contacto/github.svg" alt="GitHub" title="GitHub" class="icono"></a>
+                    <p>github.com/agusgc</p>
+                </div>
             </div>
         </section>
-        <section id="proyectos" class="section">
-            <div class="sectionText">
-                <h1>Proyectos</h1>
+        <section class="formacion" id="formacion">
+            <h3>Formación</h3>
+            <div class="contenido">
+                <p>Bachiller Tecnológico de Informática con énfasis en Desarrollo web.</p>
             </div>
-            <div class="sectionImg">
-
+     
+            <h3>Cursos</h3>
+            <div class="contenido">
+                <p>Jóvenes a Programar, Desarrollo Web - Ceibal (2023)</p>
+                <p>Crear prototipos y diseños de alta fidelidad en Figma - Google (2024)</p>
+                <p>Certificado profesional de Desarrollador Meta Back-End - Meta (2024)</p>
+                <p>Diseñador Web Profesional - Círculo Informático (2024)</p>
+                <div class="instituciones">
+                    <img src="img/cursos/ceibal.png" alt="Ceibal" class="icono">
+                    <img src="img/cursos/google.png" alt="Google" class="icono">
+                    <img src="img/cursos/meta.png" alt="Meta" class="icono">
+                    <img src="img/cursos/circulo.png" alt="Círculo informático" class="icono">
+                </div>
             </div>
         </section>
-        <section id="acercami" class="section">
-            <div class="sectionText">
-                <h1>Acerca de mí</h1>
-            </div>
-            <div class="sectionImg">
-
+        <section class="habilidades" id="habilidades">
+            <h3>Habilidades</h3>
+            <div class="contenido">
+                <div class="hab-iconos">
+                    <div>
+                        <img src="img/habilidades/html.png" alt="HTML" title="HTML" class="icono">
+                        <img src="img/habilidades/css.png" alt="CSS" title="CSS" class="icono">
+                        <img src="img/habilidades/javascript.png" alt="JavaScript" title="JavaScript" class="icono">
+                        <img src="img/habilidades/php.png" alt="PHP" title="PHP" class="icono">
+                        <img src="img/habilidades/sql.png" alt="SQL" title="SQL" class="icono">
+                    </div>
+                    <div>
+                        <img src="img/habilidades/figma.png" alt="Figma" title="Figma" class="icono">
+                        <img src="img/habilidades/photoshop.png" alt="Photoshop" title="Photoshop" class="icono">
+                        <img src="img/habilidades/illustrator.png" alt="Illustrator" title="Illustrator" class="icono">
+                    </div>
+                    <div>
+                    <img src="img/habilidades/bootstrap.png" alt="Bootstrap" title="Bootstrap" class="icono">
+                    <img src="img/habilidades/git.png" alt="Git" title="Git" class="icono">
+                    <img src="img/habilidades/github.png" alt="Github" title="Github" class="icono">
+                    <img src="img/habilidades/dreamweaver.png" alt="Dreamweaver" title="Dreamweaver" class="icono">
+                    <img src="img/habilidades/wordpress.png" alt="Wordpress" title="Wordpress" class="icono">
+                    </div>
+                </div>
+                <img src="img/hacha.svg" class="hacha">
             </div>
         </section>
-        <section id="contacto" class="section">
-            <div class="sectionText">
-                <h1>Contacto</h1>
-            </div>
-            <div class="sectionImg">
-
+        <section class="proyectos" id="proyectos">
+            <h3>Proyectos</h3>
+            <div class="contenido">
+                <p>Proyecto final - Jóvenes a Programar</p>
+                <div class="imagenes">
+                    <img src="img/paginas/jap1.png">
+                    <img src="img/paginas/jap2.png">
+                    <img src="img/paginas/jap3.png">
+                </div>
+                <a href="https://agusgc.github.io/finalJaPAgustinG/" target="_blank">Ver página</a>
+                <p>Nuevo mundo - Círculo Informático</p>
+                <div class="imagenes">
+                    <img src="img/paginas/diario1.png">
+                    <img src="img/paginas/diario2.png">
+                </div>
+                <p>Urutrabajo - Círculo Informático</p>
+                <div class="imagenes">
+                    <img src="img/paginas/urutrabajo1.png">
+                    <img src="img/paginas/urutrabajo2.png">
+                    <img src="img/paginas/urutrabajo3.png">
+                </div>
+                <p>Silco - Círculo Informático</p>
+                <div class="imagenes">
+                    <img src="img/paginas/silco1.png">
+                    <img src="img/paginas/silco2.png">
+                </div>
+                <p>Pequeños proyectos y dibujos con HTML, CSS y JavaScript</p>
+                <div class="imagenes">
+                    <img src="img/paginas/codepen1.png">
+                </div>
+                <a href="https://codepen.io/agusgc" target="_blank" class="codepen">
+                    <img src="img/contacto/codepen.svg" alt="Codepen">
+                    <p>Codepen</p>
+                </a>
             </div>
         </section>
     </main>
-
-
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>
