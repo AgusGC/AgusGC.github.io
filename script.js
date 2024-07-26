@@ -1,4 +1,5 @@
 window.addEventListener('load', () =>{
+//Menú
     let menu_btn = document.getElementById('menu-btn');
     let menu = document.getElementById('menu');
 
